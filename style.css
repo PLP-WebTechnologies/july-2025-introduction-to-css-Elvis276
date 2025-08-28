@@ -1,0 +1,84 @@
+/* General Body and Main Container Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.main-header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid #2980b9;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 15px;
+    display: flex;
+    gap: 20px; /* Modern way to add space between flex items */
+}
+
+/* Card Styling to Demonstrate the Box Model */
+.card {
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    
+    /* Box Model in action: Padding adds internal space */
+    padding: 25px; 
+    
+    /* Margin adds external space between cards */
+    margin-bottom: 20px;
+    
+    /* Box-sizing property ensures padding and border are included in the element's total width and height */
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+.styled-button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Padding for internal spacing */
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px; /* Margin for external spacing from the paragraph */
+}
+
+/* Demonstration of Box Model Spacing */
+.layout-demo {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    color: white;
+    text-align: center;
+    line-height: 150px;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: 5px solid #2c3e50; /* A clear border to define the box */
+}
+
+.box-one {
+    background-color: #e74c3c;
+    /* Margin for external space */
+    margin-right: 20px;
+}
+
+.box-two {
+    background-color: #9b59b6;
+    /* Padding for internal space */
+    padding: 10px; 
+    /* The padding will add to the total width, making this box appear larger */
+    box-sizing: border-box; /* This helps prevent padding from affecting the total size */
+}
